@@ -1,0 +1,848 @@
+2025-06-15 16:40:39,425 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-15 16:46:13,784 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-15 16:48:55,018 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-15 16:48:55,103 - INFO - Database exists with 0 documents
+2025-06-15 16:49:09,387 - INFO - Database exists with 0 documents
+2025-06-15 16:49:18,167 - INFO - Database exists with 0 documents
+2025-06-15 16:49:19,823 - INFO - ✅ Gemini API connection successful
+2025-06-15 16:49:19,827 - INFO - ✅ Vector database initialized successfully
+2025-06-15 16:49:32,502 - INFO - Database exists with 0 documents
+2025-06-15 16:49:34,209 - INFO - ✅ Gemini API connection successful
+2025-06-15 16:49:34,215 - INFO - ✅ Vector database initialized successfully
+2025-06-15 16:49:48,628 - INFO - ✅ Gemini API connection successful
+2025-06-15 16:49:48,639 - INFO - ✅ Vector database initialized successfully
+2025-06-15 16:49:57,292 - INFO - Database exists with 0 documents
+2025-06-15 16:50:00,276 - INFO - Database exists with 0 documents
+2025-06-15 16:50:02,040 - INFO - ✅ Gemini API connection successful
+2025-06-15 16:50:02,051 - INFO - ✅ Vector database initialized successfully
+2025-06-15 16:50:07,277 - INFO - Database exists with 0 documents
+2025-06-15 16:50:07,809 - INFO - ✅ Gemini API connection successful
+2025-06-15 16:50:07,814 - INFO - ✅ Vector database initialized successfully
+2025-06-15 16:50:22,161 - INFO - Database exists with 0 documents
+2025-06-15 16:50:38,477 - INFO - Database exists with 0 documents
+2025-06-15 16:50:39,959 - INFO - Database exists with 0 documents
+2025-06-15 16:50:41,583 - INFO - ✅ Gemini API connection successful
+2025-06-15 16:50:41,587 - INFO - ✅ Vector database initialized successfully
+2025-06-15 16:50:43,169 - INFO - Database exists with 0 documents
+2025-06-15 16:50:44,774 - INFO - ✅ Gemini API connection successful
+2025-06-15 16:50:44,781 - INFO - ✅ Vector database initialized successfully
+2025-06-15 16:57:23,063 - INFO - Database exists with 0 documents
+2025-06-15 16:57:23,631 - INFO - ✅ Gemini API connection successful
+2025-06-15 16:57:23,636 - INFO - ✅ Vector database initialized successfully
+2025-06-15 17:04:26,054 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-15 20:14:31,799 - CRITICAL - A critical error occurred in the main app: Traceback (most recent call last):
+  File "/Users/vikramleo/Downloads/RAG/BIGDATA.py", line 531, in <module>
+    main()
+    ~~~~^^
+  File "/Users/vikramleo/Downloads/RAG/BIGDATA.py", line 510, in main
+    init_session_state()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/vikramleo/Downloads/RAG/BIGDATA.py", line 71, in init_session_state
+    'db_exists': check_db_exists(),
+                 ~~~~~~~~~~~~~~~^^
+  File "/Users/vikramleo/Downloads/RAG/BIGDATA.py", line 91, in check_db_exists
+    db_path = Path("./vector_db")
+              ^^^^
+NameError: name 'Path' is not defined
+
+2025-06-15 22:05:28,067 - CRITICAL - VectorDB creation failed: Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 214, in get_vector_db
+    vector_db = Chroma(
+                ^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_core\_api\deprecation.py", line 224, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 83, in __init__
+    import chromadb
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.auth.token_authn import TokenTransportHeader
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\auth\token_authn\__init__.py", line 24, in <module>
+    from chromadb.telemetry.opentelemetry import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 13, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\trace_exporter\__init__.py", line 22, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.exporter import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\exporter.py", line 39, in <module>
+    from opentelemetry.proto.common.v1.common_pb2 import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\proto\common\v1\common_pb2.py", line 36, in <module>
+    _descriptor.FieldDescriptor(
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\protobuf\descriptor.py", line 621, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+2025-06-15 22:10:48,796 - CRITICAL - VectorDB creation failed: Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 214, in get_vector_db
+    vector_db = Chroma(
+                ^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_core\_api\deprecation.py", line 224, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 83, in __init__
+    import chromadb
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.auth.token_authn import TokenTransportHeader
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\auth\token_authn\__init__.py", line 24, in <module>
+    from chromadb.telemetry.opentelemetry import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 13, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\trace_exporter\__init__.py", line 22, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.exporter import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\exporter.py", line 39, in <module>
+    from opentelemetry.proto.common.v1.common_pb2 import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\proto\common\v1\common_pb2.py", line 36, in <module>
+    _descriptor.FieldDescriptor(
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\protobuf\descriptor.py", line 621, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+2025-06-15 22:13:57,616 - CRITICAL - VectorDB creation failed: Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 214, in get_vector_db
+    vector_db = Chroma(
+                ^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_core\_api\deprecation.py", line 224, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 83, in __init__
+    import chromadb
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.auth.token_authn import TokenTransportHeader
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\auth\token_authn\__init__.py", line 24, in <module>
+    from chromadb.telemetry.opentelemetry import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 13, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\trace_exporter\__init__.py", line 22, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.exporter import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\exporter.py", line 39, in <module>
+    from opentelemetry.proto.common.v1.common_pb2 import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\proto\common\v1\common_pb2.py", line 36, in <module>
+    _descriptor.FieldDescriptor(
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\protobuf\descriptor.py", line 621, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+2025-06-15 22:20:13,749 - INFO - Initializing embeddings...
+2025-06-15 22:20:13,771 - INFO - Testing embedding API...
+2025-06-15 22:20:15,399 - INFO - Attempting to load existing vector database...
+2025-06-15 22:20:15,742 - WARNING - Could not load existing database: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+2025-06-15 22:20:15,742 - INFO - Creating new vector database...
+2025-06-15 22:20:15,748 - ERROR - Failed to create new database: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+2025-06-15 22:20:15,754 - CRITICAL - VectorDB creation failed: Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 232, in get_vector_db
+    vector_db = Chroma(
+                ^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_core\_api\deprecation.py", line 224, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 83, in __init__
+    import chromadb
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.auth.token_authn import TokenTransportHeader
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\auth\token_authn\__init__.py", line 24, in <module>
+    from chromadb.telemetry.opentelemetry import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 13, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\trace_exporter\__init__.py", line 22, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.exporter import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\exporter.py", line 39, in <module>
+    from opentelemetry.proto.common.v1.common_pb2 import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\proto\common\v1\common_pb2.py", line 36, in <module>
+    _descriptor.FieldDescriptor(
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\protobuf\descriptor.py", line 621, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 243, in get_vector_db
+    vector_db = Chroma.from_texts(
+                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 817, in from_texts
+    chroma_collection = cls(
+                        ^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_core\_api\deprecation.py", line 224, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 83, in __init__
+    import chromadb
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.auth.token_authn import TokenTransportHeader
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\auth\token_authn\__init__.py", line 24, in <module>
+    from chromadb.telemetry.opentelemetry import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 13, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\trace_exporter\__init__.py", line 22, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.exporter import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\exporter.py", line 39, in <module>
+    from opentelemetry.proto.common.v1.common_pb2 import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\proto\common\v1\common_pb2.py", line 36, in <module>
+    _descriptor.FieldDescriptor(
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\protobuf\descriptor.py", line 621, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+2025-06-15 22:20:15,757 - CRITICAL - Knowledge base build crashed: Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 232, in get_vector_db
+    vector_db = Chroma(
+                ^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_core\_api\deprecation.py", line 224, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 83, in __init__
+    import chromadb
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.auth.token_authn import TokenTransportHeader
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\auth\token_authn\__init__.py", line 24, in <module>
+    from chromadb.telemetry.opentelemetry import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 13, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\trace_exporter\__init__.py", line 22, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.exporter import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\exporter.py", line 39, in <module>
+    from opentelemetry.proto.common.v1.common_pb2 import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\proto\common\v1\common_pb2.py", line 36, in <module>
+    _descriptor.FieldDescriptor(
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\protobuf\descriptor.py", line 621, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 243, in get_vector_db
+    vector_db = Chroma.from_texts(
+                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 817, in from_texts
+    chroma_collection = cls(
+                        ^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_core\_api\deprecation.py", line 224, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 83, in __init__
+    import chromadb
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.auth.token_authn import TokenTransportHeader
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\auth\token_authn\__init__.py", line 24, in <module>
+    from chromadb.telemetry.opentelemetry import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 13, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\trace_exporter\__init__.py", line 22, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.exporter import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\exporter.py", line 39, in <module>
+    from opentelemetry.proto.common.v1.common_pb2 import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\proto\common\v1\common_pb2.py", line 36, in <module>
+    _descriptor.FieldDescriptor(
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\protobuf\descriptor.py", line 621, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 293, in build_knowledge_base
+    vector_db = get_vector_db()
+                ^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 266, in get_vector_db
+    raise RuntimeError(error_msg)
+RuntimeError: VectorDB Error: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+2025-06-15 22:21:27,938 - INFO - Initializing embeddings...
+2025-06-15 22:21:27,962 - INFO - Testing embedding API...
+2025-06-15 22:21:29,564 - INFO - Attempting to load existing vector database...
+2025-06-15 22:21:29,889 - WARNING - Could not load existing database: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+2025-06-15 22:21:29,889 - INFO - Creating new vector database...
+2025-06-15 22:21:29,895 - ERROR - Failed to create new database: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+2025-06-15 22:21:29,901 - CRITICAL - VectorDB creation failed: Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 232, in get_vector_db
+    vector_db = Chroma(
+                ^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_core\_api\deprecation.py", line 224, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 83, in __init__
+    import chromadb
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.auth.token_authn import TokenTransportHeader
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\auth\token_authn\__init__.py", line 24, in <module>
+    from chromadb.telemetry.opentelemetry import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 13, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\trace_exporter\__init__.py", line 22, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.exporter import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\exporter.py", line 39, in <module>
+    from opentelemetry.proto.common.v1.common_pb2 import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\proto\common\v1\common_pb2.py", line 36, in <module>
+    _descriptor.FieldDescriptor(
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\protobuf\descriptor.py", line 621, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 243, in get_vector_db
+    vector_db = Chroma.from_texts(
+                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 817, in from_texts
+    chroma_collection = cls(
+                        ^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_core\_api\deprecation.py", line 224, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 83, in __init__
+    import chromadb
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.auth.token_authn import TokenTransportHeader
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\auth\token_authn\__init__.py", line 24, in <module>
+    from chromadb.telemetry.opentelemetry import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 13, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\trace_exporter\__init__.py", line 22, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.exporter import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\exporter.py", line 39, in <module>
+    from opentelemetry.proto.common.v1.common_pb2 import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\proto\common\v1\common_pb2.py", line 36, in <module>
+    _descriptor.FieldDescriptor(
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\protobuf\descriptor.py", line 621, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+2025-06-15 22:21:29,905 - CRITICAL - Knowledge base build crashed: Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 232, in get_vector_db
+    vector_db = Chroma(
+                ^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_core\_api\deprecation.py", line 224, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 83, in __init__
+    import chromadb
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.auth.token_authn import TokenTransportHeader
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\auth\token_authn\__init__.py", line 24, in <module>
+    from chromadb.telemetry.opentelemetry import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 13, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\trace_exporter\__init__.py", line 22, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.exporter import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\exporter.py", line 39, in <module>
+    from opentelemetry.proto.common.v1.common_pb2 import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\proto\common\v1\common_pb2.py", line 36, in <module>
+    _descriptor.FieldDescriptor(
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\protobuf\descriptor.py", line 621, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 243, in get_vector_db
+    vector_db = Chroma.from_texts(
+                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 817, in from_texts
+    chroma_collection = cls(
+                        ^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_core\_api\deprecation.py", line 224, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 83, in __init__
+    import chromadb
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.auth.token_authn import TokenTransportHeader
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\auth\token_authn\__init__.py", line 24, in <module>
+    from chromadb.telemetry.opentelemetry import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 13, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\trace_exporter\__init__.py", line 22, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.exporter import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\exporter.py", line 39, in <module>
+    from opentelemetry.proto.common.v1.common_pb2 import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\proto\common\v1\common_pb2.py", line 36, in <module>
+    _descriptor.FieldDescriptor(
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\protobuf\descriptor.py", line 621, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 293, in build_knowledge_base
+    vector_db = get_vector_db()
+                ^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 266, in get_vector_db
+    raise RuntimeError(error_msg)
+RuntimeError: VectorDB Error: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+2025-06-15 22:24:03,373 - INFO - Initializing embeddings...
+2025-06-15 22:24:03,396 - INFO - Testing embedding API...
+2025-06-15 22:24:03,842 - INFO - Attempting to load existing vector database...
+2025-06-15 22:24:04,160 - WARNING - Could not load existing database: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+2025-06-15 22:24:04,160 - INFO - Creating new vector database...
+2025-06-15 22:24:04,173 - ERROR - Failed to create new database: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+2025-06-15 22:24:04,173 - CRITICAL - VectorDB creation failed: Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 232, in get_vector_db
+    vector_db = Chroma(
+                ^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_core\_api\deprecation.py", line 224, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 83, in __init__
+    import chromadb
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.auth.token_authn import TokenTransportHeader
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\auth\token_authn\__init__.py", line 24, in <module>
+    from chromadb.telemetry.opentelemetry import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 13, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\trace_exporter\__init__.py", line 22, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.exporter import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\exporter.py", line 39, in <module>
+    from opentelemetry.proto.common.v1.common_pb2 import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\proto\common\v1\common_pb2.py", line 36, in <module>
+    _descriptor.FieldDescriptor(
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\protobuf\descriptor.py", line 621, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 243, in get_vector_db
+    vector_db = Chroma.from_texts(
+                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 817, in from_texts
+    chroma_collection = cls(
+                        ^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_core\_api\deprecation.py", line 224, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 83, in __init__
+    import chromadb
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.auth.token_authn import TokenTransportHeader
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\auth\token_authn\__init__.py", line 24, in <module>
+    from chromadb.telemetry.opentelemetry import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 13, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\trace_exporter\__init__.py", line 22, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.exporter import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\exporter.py", line 39, in <module>
+    from opentelemetry.proto.common.v1.common_pb2 import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\proto\common\v1\common_pb2.py", line 36, in <module>
+    _descriptor.FieldDescriptor(
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\protobuf\descriptor.py", line 621, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+2025-06-15 22:24:04,173 - CRITICAL - Knowledge base build crashed: Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 232, in get_vector_db
+    vector_db = Chroma(
+                ^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_core\_api\deprecation.py", line 224, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 83, in __init__
+    import chromadb
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.auth.token_authn import TokenTransportHeader
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\auth\token_authn\__init__.py", line 24, in <module>
+    from chromadb.telemetry.opentelemetry import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 13, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\trace_exporter\__init__.py", line 22, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.exporter import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\exporter.py", line 39, in <module>
+    from opentelemetry.proto.common.v1.common_pb2 import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\proto\common\v1\common_pb2.py", line 36, in <module>
+    _descriptor.FieldDescriptor(
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\protobuf\descriptor.py", line 621, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 243, in get_vector_db
+    vector_db = Chroma.from_texts(
+                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 817, in from_texts
+    chroma_collection = cls(
+                        ^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_core\_api\deprecation.py", line 224, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 83, in __init__
+    import chromadb
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.auth.token_authn import TokenTransportHeader
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\auth\token_authn\__init__.py", line 24, in <module>
+    from chromadb.telemetry.opentelemetry import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 13, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\trace_exporter\__init__.py", line 22, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.exporter import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\exporter.py", line 39, in <module>
+    from opentelemetry.proto.common.v1.common_pb2 import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\proto\common\v1\common_pb2.py", line 36, in <module>
+    _descriptor.FieldDescriptor(
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\protobuf\descriptor.py", line 621, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 293, in build_knowledge_base
+    vector_db = get_vector_db()
+                ^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 266, in get_vector_db
+    raise RuntimeError(error_msg)
+RuntimeError: VectorDB Error: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+2025-06-16 12:15:27,424 - INFO - Processing directory prepared: ./processing
+2025-06-16 12:15:27,425 - INFO - Initializing new vector database connection
+2025-06-16 12:15:27,522 - INFO - Embeddings model initialized successfully
+2025-06-16 12:15:27,522 - INFO - Testing embedding functionality...
+2025-06-16 12:15:28,057 - INFO - Embedding test successful - dimension: 768
+2025-06-16 12:15:28,058 - INFO - Vector DB directory created/verified: ./vector_db
+2025-06-16 12:15:30,190 - ERROR - Chroma initialization failed: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+2025-06-16 12:15:30,198 - ERROR - Chroma retry failed: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+2025-06-16 12:15:30,348 - CRITICAL - VectorDB creation failed: Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 338, in get_vector_db
+    vector_db = Chroma(
+                ^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_core\_api\deprecation.py", line 224, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 83, in __init__
+    import chromadb
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.auth.token_authn import TokenTransportHeader
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\auth\token_authn\__init__.py", line 24, in <module>
+    from chromadb.telemetry.opentelemetry import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 13, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\trace_exporter\__init__.py", line 22, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.exporter import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\exporter.py", line 39, in <module>
+    from opentelemetry.proto.common.v1.common_pb2 import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\proto\common\v1\common_pb2.py", line 36, in <module>
+    _descriptor.FieldDescriptor(
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\protobuf\descriptor.py", line 621, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 350, in get_vector_db
+    vector_db = Chroma(
+                ^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_core\_api\deprecation.py", line 224, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 83, in __init__
+    import chromadb
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.auth.token_authn import TokenTransportHeader
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\auth\token_authn\__init__.py", line 24, in <module>
+    from chromadb.telemetry.opentelemetry import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 13, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\trace_exporter\__init__.py", line 22, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.exporter import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\exporter.py", line 39, in <module>
+    from opentelemetry.proto.common.v1.common_pb2 import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\proto\common\v1\common_pb2.py", line 36, in <module>
+    _descriptor.FieldDescriptor(
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\protobuf\descriptor.py", line 621, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 358, in get_vector_db
+    raise ValueError(f"Vector database creation failed: {str(retry_e)}")
+ValueError: Vector database creation failed: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+2025-06-16 12:16:41,067 - INFO - Processing directory prepared: ./processing
+2025-06-16 12:16:41,067 - INFO - Initializing new vector database connection
+2025-06-16 12:16:41,071 - INFO - Embeddings model initialized successfully
+2025-06-16 12:16:41,071 - INFO - Testing embedding functionality...
+2025-06-16 12:16:41,581 - INFO - Embedding test successful - dimension: 768
+2025-06-16 12:16:41,582 - INFO - Vector DB directory created/verified: ./vector_db
+2025-06-16 12:16:41,589 - ERROR - Chroma initialization failed: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+2025-06-16 12:16:41,601 - ERROR - Chroma retry failed: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+2025-06-16 12:16:41,603 - CRITICAL - VectorDB creation failed: Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 338, in get_vector_db
+    vector_db = Chroma(
+                ^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_core\_api\deprecation.py", line 224, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 83, in __init__
+    import chromadb
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.auth.token_authn import TokenTransportHeader
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\auth\token_authn\__init__.py", line 24, in <module>
+    from chromadb.telemetry.opentelemetry import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 13, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\trace_exporter\__init__.py", line 22, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.exporter import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\exporter.py", line 39, in <module>
+    from opentelemetry.proto.common.v1.common_pb2 import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\proto\common\v1\common_pb2.py", line 36, in <module>
+    _descriptor.FieldDescriptor(
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\protobuf\descriptor.py", line 621, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 350, in get_vector_db
+    vector_db = Chroma(
+                ^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_core\_api\deprecation.py", line 224, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\langchain_community\vectorstores\chroma.py", line 83, in __init__
+    import chromadb
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.auth.token_authn import TokenTransportHeader
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\auth\token_authn\__init__.py", line 24, in <module>
+    from chromadb.telemetry.opentelemetry import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 13, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\trace_exporter\__init__.py", line 22, in <module>
+    from opentelemetry.exporter.otlp.proto.grpc.exporter import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\exporter\otlp\proto\grpc\exporter.py", line 39, in <module>
+    from opentelemetry.proto.common.v1.common_pb2 import (
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\opentelemetry\proto\common\v1\common_pb2.py", line 36, in <module>
+    _descriptor.FieldDescriptor(
+  File "C:\Users\vikra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\protobuf\descriptor.py", line 621, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vikra\RAG CFA\BIGDATA.py", line 358, in get_vector_db
+    raise ValueError(f"Vector database creation failed: {str(retry_e)}")
+ValueError: Vector database creation failed: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+
+2025-06-16 12:21:37,810 - INFO - Processing directory prepared: ./processing
+2025-06-16 12:21:37,810 - INFO - Initializing new vector database connection
+2025-06-16 12:21:37,828 - INFO - Embeddings model initialized successfully
+2025-06-16 12:21:38,168 - ERROR - Failed to initialize vector database: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
