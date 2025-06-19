@@ -1,12 +1,10 @@
 streamlit
 langchain-community
 langchain
-HuggingFaceEmbeddings
-faiss-cpu # or faiss-gpu if you have a GPU environment and need it
-python-dotenv # If you use .env locally for GOOGLE_API_KEY, though not strictly needed for Streamlit Cloud secrets
+sentence-transformers # Crucial for HuggingFaceEmbeddings
+faiss-cpu # Or faiss-gpu if you're in a GPU environment (less common for basic Streamlit Cloud)
 Pillow
 pytesseract
-sqlite3 # Built-in, but good to list if using it
 google-generativeai
 pydantic
-pdf2image # Make sure this is listed
+pdf2image
